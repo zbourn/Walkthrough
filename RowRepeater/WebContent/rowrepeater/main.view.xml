@@ -1,0 +1,9 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons"
+			controllerName="rowrepeater.main" xmlns:html="http://www.w3.org/1999/xhtml">
+<RowRepeater xmlns="sap.ui.commons"
+	id="id1"	
+	numberOfRows="5"
+	currentPage="1"	
+	design="Standard">		
+</RowRepeater>
+</core:View>
