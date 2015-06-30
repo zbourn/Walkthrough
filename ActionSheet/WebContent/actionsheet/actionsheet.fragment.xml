@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ActionSheet xmlns="sap.m" placement="Bottom"
+		showCancelButton="true" title="Choose Your Action">
+		<buttons> 
+			<Button xmlns="sap.m" text="Reject" icon="sap-icon://decline"/>
+				<Button xmlns="sap.m" text="Accept" icon="sap-icon://accept"/>
+					<Button xmlns="sap.m" text="Email" icon="sap-icon://email"/>
+						<Button xmlns="sap.m" text="Forward" icon="sap-icon://forward"/>
+							<Button xmlns="sap.m" text="Delete" icon="sap-icon://delete"/>
+								<Button xmlns="sap.m" text="Other"/>								
+		</buttons>
+	</ActionSheet>
+</core:FragmentDefinition>
