@@ -1,0 +1,90 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="nad.controllers.App" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Panel xmlns="sap.m" headerText="{i18n>panelHeaderText}" width="auto"
+		class="sapUiResponsiveMargin">
+		<content>
+			<Label xmlns="sap.m" text="{i18n>fname}" class="sapUiSmallMargin" />
+			<Input xmlns="sap.m" value="{/firstName}" width="200px"
+				enabled="{/enabled}" valueLiveUpdate="true" />
+			<Label xmlns="sap.m" text="{i18n>lname}" class="sapUiSmallMargin" />
+			<Input xmlns="sap.m" value="{/lastName}" width="200px" enabled="{/enabled}"
+				valueLiveUpdate="true" />
+			<CheckBox xmlns="sap.m" selected="{/enabled}" text="{i18n>Enabled}" />
+		</content>
+	</Panel>
+	<Panel xmlns="sap.m" headerText="{i18n>panel2HeaderText}" width="auto"
+		class="sapUiResponsiveMargin">
+		<content>
+			<Label text="{i18n>dateOfBirth}" />
+			<Text
+				text="{parts:[{path: '/dateOfBirth'},
+			                    {path: 'i18n>invalidDate'}],
+			           formatter: '.formatter.dateFormatter'
+			                    }"
+				width="200px" class="sapUiSmallMargin" />
+			<Label text="{i18n>salesToDate}" class="sapUiSmallMargin" />
+			<Input width="200px" enabled="{/enabled}"
+				description="{ path: '/currencyCode',
+                               formatter: '.formatter.getCurrencySymbol'
+                             }"
+				value="{ parts: [{path: '/salesToDate'},
+                       { path: '/currencyCode'}],
+                         type: 'sap.ui.model.type.Currency',
+                         formatOptions: {showMeasure: false }
+                       }" />
+		</content>
+	</Panel>
+	<Panel headerText="{i18n>panel3HeaderText}" class="sapUiResponsiveMargin"
+		width="auto">
+		<content>
+			<List headerText="{i18n>invoiceListTitle}" class="sapUiResponsiveMargin"
+				width="auto" items="{/invoices}">
+				<items>
+					<ObjectListItem title="{Quantity} x {ProductName}"
+						number="{ parts: [{path: 'ExtendedPrice'},
+                                {path: '/currencyCode'}],
+                                 type: 'sap.ui.model.type.Currency',
+                                 formatOptions: { showMeasure: false }
+                                }"
+						numberUnit="{ path: '/currencyCode',
+                                      formatter: '.formatter.getCurrencySymbol' }"
+						numberState="{= ${ExtendedPrice} > ${/priceThreshold} ? 'Error' : 'Success' }">
+						<attributes>
+							<ObjectAttribute
+								text="{ path: 'Status',
+                                        formatter: '.formatter.getStatusText' }" />
+						</attributes>
+					</ObjectListItem>
+
+				</items>
+			</List>
+		</content>
+	</Panel>
+	<Panel headerText="{i18n>panel4HeaderText}" class="sapUiResponsiveMargin"
+		width="auto">
+		<content>
+		<List id="ProductList" headerText="{i18n>productListTitle}" />		
+<!-- 			<List headerText="{i18n>productListTitle}" items="{products>/Products}"> -->
+<!-- 				<items> -->
+<!-- 					<ObjectListItem title="{products>ProductName}" -->
+<!-- 						number="{ parts: [{path: 'products>UnitPrice'}, -->
+<!--                                 {path: '/currencyCode'}], -->
+<!--                                  type: 'sap.ui.model.type.Currency', -->
+<!--                                  formatOptions: { showMeasure: false } -->
+<!--                                 }" -->
+<!-- 						numberUnit="{ path: '/currencyCode', -->
+<!--                                       formatter: '.formatter.getCurrencySymbol' }"> -->
+<!-- 						<attributes> -->
+<!-- 							<ObjectAttribute text="({products>QuantityPerUnit})" /> -->
+<!-- 							<ObjectAttribute title="{path: 'i18n>stockValue'}" -->
+<!-- 								text="{parts: [{path: 'products>UnitPrice'}, -->
+<!--                                       {path: 'products>UnitsInStock'}, -->
+<!--                                       {path: '/currencyCode'}], -->
+<!--                                        formatter: '.formatter.getStockValue' }" /> -->
+<!-- 						</attributes> -->
+<!-- 					</ObjectListItem> -->
+<!-- 				</items> -->
+<!-- 			</List> -->
+		</content>
+	</Panel>
+</core:View>

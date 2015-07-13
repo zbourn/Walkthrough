@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+
+<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal"
+	data-sap-ui-compatVersion="edge" data-sap-ui-preload="async"
+	data-sap-ui-resourceroots='{ "nad": "./" }'>
+	
+</script>
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+<script>
+	// Set log level to maximum and explicitly switch on the debug flag
+	//jQuery.sap.log.setLevel(jQuery.sap.log.Level.DEBUG);
+	//jQuery.sap.debug(true);
+	// ------------------------------------------------------------------------
+	// Attach an anonymous function to the SAPUI5 'init' event
+	sap.ui.getCore().attachInit(function() {
+		// Create a new JSON model object
+
+		// 	var oModel = sap.ui.model.json.JSONModel({
+		// 			greetingText : "Hi, my name is Nadim Iqbal"
+		// 			firstName : "Nadim",
+		// 			lastName : "Iqbal",
+		// 			enabled : true,
+		// 			dateOfBirth : {
+		// 				day : 3,
+		// 				month : 8,
+		// 				year : 1887
+		// 			}
+		// 		});
+		// 		oModel.setDefaultBindingMode(sap.ui.model.BindingMode.OneWay);
+		// 		sap.ui.getCore().setModel(oModel);
+		// Create a resource bundle for language specific texts
+		// 		var oResourceBundle = new sap.ui.model.resource.ResourceModel({
+		// 			bundleName : "nad.i18n.i18n"
+		// 		});
+		// 		sap.ui.getCore().setModel(oResourceBundle, "i18n");
+		// Create a text UI element that displays a hardcoded text string
+		// 		var tText = new sap.m.Text({
+		// 			text : "Hi, my name is {/firstName} {/lastName}"
+		// 		});
+		// 		tText.addStyleClass("sapUiSmallMargin");
+		// 		tText.placeAt("content");
+		// Display the XML view called "App"
+		var oView = new sap.ui.core.mvc.XMLView({
+			viewName : "nad.Views.App"
+		});
+		
+		// Register the view with the message manager
+		sap.ui.getCore().getMessageManager().registerObject(oView, true);
+
+		oView.placeAt("content");
+	});
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
+</html>
