@@ -1,0 +1,152 @@
+[
+	{
+		"WfID":"WfID 1",
+		"EffDat":"/Date(1451252848000)/",
+		"MiRate":8845.06,
+		"MinRate":9133.97,
+		"Origin":"Origin 1",
+		"Dest":"Dest 1",
+		"Carr":"Shaffer Trucking Inc.",
+		"Off":"Off 1",
+		"Status":false,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 1')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 2",
+		"EffDat":"/Date(1367272048000)/",
+		"MiRate":1003.77,
+		"MinRate":7994.3,
+		"Origin":"Origin 2",
+		"Dest":"Dest 2",
+		"Carr":"Carr 2",
+		"Off":"Off 2",
+		"Status":false,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 2')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 3",
+		"EffDat":"/Date(964475248000)/",
+		"MiRate":6885.02,
+		"MinRate":6462.22,
+		"Origin":"Origin 3",
+		"Dest":"Dest 3",
+		"Carr":"Carr 3",
+		"Off":"Off 3",
+		"Status":true,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 3')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 4",
+		"EffDat":"/Date(1285537648000)/",
+		"MiRate":900.38,
+		"MinRate":3857.21,
+		"Origin":"Origin 4",
+		"Dest":"Dest 4",
+		"Carr":"Carr 4",
+		"Off":"Off 4",
+		"Status":true,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 4')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 5",
+		"EffDat":"/Date(1215208048000)/",
+		"MiRate":6441.27,
+		"MinRate":6284.02,
+		"Origin":"Origin 5",
+		"Dest":"Dest 5",
+		"Carr":"Carr 5",
+		"Off":"Off 5",
+		"Status":true,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 5')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 6",
+		"EffDat":"/Date(1116971248000)/",
+		"MiRate":1141.4,
+		"MinRate":9626.08,
+		"Origin":"Origin 6",
+		"Dest":"Dest 6",
+		"Carr":"Carr 6",
+		"Off":"Off 6",
+		"Status":false,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 6')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 7",
+		"EffDat":"/Date(1379713648000)/",
+		"MiRate":4016.85,
+		"MinRate":3364.72,
+		"Origin":"Origin 7",
+		"Dest":"Dest 7",
+		"Carr":"Carr 7",
+		"Off":"Off 7",
+		"Status":false,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 7')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 8",
+		"EffDat":"/Date(1108849648000)/",
+		"MiRate":6100.75,
+		"MinRate":4438.41,
+		"Origin":"Origin 8",
+		"Dest":"Dest 8",
+		"Carr":"Carr 8",
+		"Off":"Off 8",
+		"Status":true,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 8')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 9",
+		"EffDat":"/Date(1157147248000)/",
+		"MiRate":5784.02,
+		"MinRate":7458.76,
+		"Origin":"Origin 9",
+		"Dest":"Dest 9",
+		"Carr":"Carr 9",
+		"Off":"Off 9",
+		"Status":true,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 9')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	},
+	{
+		"WfID":"WfID 10",
+		"EffDat":"/Date(1390772848000)/",
+		"MiRate":8310.02,
+		"MinRate":8192.87,
+		"Origin":"Origin 10",
+		"Dest":"Dest 10",
+		"Carr":"Carr 10",
+		"Off":"Off 10",
+		"Status":false,
+		"__metadata":{
+			"uri":"CarrierRateSet('WfID 10')",
+			"type":"CarrierRateModel.CarrierRate"
+		}
+	}
+]

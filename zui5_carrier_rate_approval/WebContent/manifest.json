@@ -1,0 +1,98 @@
+{
+	"_version": "1.1.0",
+	"sap.app": 
+	{
+		"_version": "1.1.0",
+		"id": "nad",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"applicationVersion": 
+		{
+			"version": "1.1.0"
+		},
+
+		"ach": "CA-UI5-DOC",
+		"dataSources": 
+		{
+			"workflowRemote": 
+			{
+				"uri": "proxy/http/services.odata.org/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": 
+				{
+					"odataVersion": "2.0"
+				}
+			}
+		}
+	},
+
+	"sap.ui": 
+	{
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"deviceTypes": 
+		{
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+
+		"supportedThemes": 
+		[
+			"sap.bluecrystal"
+		]
+	},
+
+	"sap.ui5": 
+	{
+		"_version": "1.1.0",
+		"rootView": "nad.views.login",
+		"dependencies": 
+		{
+			"minUI5Version": "1.30",
+			"libs": 
+			{
+				"sap.m": 
+				{
+					
+				}
+			}
+		},
+
+		"models": 
+		{
+			"i18n": 
+			{
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": 
+				{
+					"bundleName": "nad.i18n.i18n"
+				}
+			},
+
+			"workflow": 
+			{
+				"dataSource": "workflowRemote"
+			}
+		},
+
+		"config": 
+		{
+			"workflowLocal": "/Workflows.json",
+			"workflowRemote": "proxy/http/services.odata.org/V2/Northwind/Northwind.svc/"
+		},
+
+		
+		"resources": 
+		{
+			"css": 
+			[
+				{
+					"uri": "css/style.css"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<title>Contract Rate Approval</title>
+        <script type="text/javascript" src="javascript/spin.min.js"></script>        
+	  	<script type="text/javascript" src="javascript/loadSapUI5.js"></script>	  	
+        <link rel="stylesheet" type="text/css" href="css/temp.css">
+        <!-- When On ABAP use google font -->
+        <link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+	</head>
+	
+	<body class="sapUiBody" id="content">
+		<div id="tempLoadPlaceholder"></div>
+		<div id="tempLogoPlaceholder">
+			<div class="tempLogo"></div>
+			<div class="tempSLogan">Contract Rate Approval</div>
+		</div>
+	</body>
+	
+	<script>
+		oApplication.load(	"resources/sap-ui-core.js",
+							 "sap-ui-bootstrap",
+							 "sap.m, sap.ui.layout",
+							 '{"nad": "./"}',
+							 "complex",
+							 "sap_bluecrystal",
+							 "true",
+							 oApplication.onSAPUI5Loaded );
+	</script>
+</html>
