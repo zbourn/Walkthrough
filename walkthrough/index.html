@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<!-- The head part will be used by the browser to process the document-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<meta name="author" content="Nadim Iqbal"/>
+		<link href="image/Icon_Fiori.png" rel="icon" type="image/x-icon">
+        <title>Walkthrough</title>
+        <style>
+div#ui5Loading{
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #666;
+	text-align: center;
+    margin-top: 200px;
+	margin-bottom: 2em;
+}
+        </style>
+	</head>
+	<body class="sapUiBody" role="application">
+	<div id="ui5Loading">SAPUI5 is loading, please wait...
+	    <img src="image/flower.gif" alt="Klematis" width="110" height="90">
+	</div>
+	<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-resourceroots='{"nad": "./"}'
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-compatVersion="edge"
+                data-sap-ui-preload="async">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<script>
+			sap.ui.getCore().attachInit(function () {
+            //Remove Loading element
+            var oChild = document.getElementById("ui5Loading");
+            oChild.parentNode.removeChild(oChild);
+			    alert("UI5 is ready!");
+			});
+		</script>
+		<div id="content"></div>
+		<p>Hello World</p>
+	</body>
+</html>
